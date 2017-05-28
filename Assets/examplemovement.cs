@@ -20,7 +20,7 @@ public class examplemovement : MonoBehaviour {
 	void Update () {
 
         time += Time.deltaTime;
-        if(time > 1.0f)
+        if(time > 4.0f)
         {
             time = 0.0f;
             state = state + 1;
