@@ -6,7 +6,8 @@ public enum state
     Show,
     Match,
     Fail,
-    Success
+    Success,
+    click
 }
 
 public class fsm : MonoBehaviour
@@ -16,7 +17,7 @@ public class fsm : MonoBehaviour
     public state phase = state.Show;
     List<int> showOrder = new List<int>();
     float time = 0;
-    int ShowIndex = 0;
+    public int ShowIndex = 0;
     public int MatchIndex = 0;
     public GameObject FailUI;
     public GameObject SuccessUI;
@@ -53,12 +54,16 @@ public class fsm : MonoBehaviour
             SuccessUI.SetActive(true);
             Length++;
         }
+  
 	}
     
+    //함수들
+
+
     void Show()
     {
         time += Time.deltaTime;
-        if (time > 0.8f)
+        if (time > 1.0f)
         {
             time = 0;
             target[showOrder[ShowIndex]].GetComponent<examplemovement>().MoveStart();
@@ -98,5 +103,10 @@ public class fsm : MonoBehaviour
 
         }
 
+ 
+
     }
+
+   
+
 }

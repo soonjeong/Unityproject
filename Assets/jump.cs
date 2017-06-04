@@ -17,8 +17,10 @@ public class jump : MonoBehaviour {
         if (Input.GetMouseButtonDown(0))
         {
             GetComponent<Rigidbody2D>().AddForce(new Vector2(0.0f, Jump));
+            GetComponent<fsm>().Check(gameObject);
 
         }
+        
 
 		
 	}

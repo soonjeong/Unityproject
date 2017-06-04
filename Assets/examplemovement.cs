@@ -20,7 +20,7 @@ public class examplemovement : MonoBehaviour {
 	void Update () {
 
         time += Time.deltaTime;
-        if(time > 4.0f)
+        if(time > 0.5f&&state!=3) 
         {
             time = 0.0f;
             state = state + 1;
@@ -29,7 +29,7 @@ public class examplemovement : MonoBehaviour {
         if (state == 0)
         {
             Vector3 newPosition = transform.position;
-            newPosition.y += Time.deltaTime * upanddown;
+            newPosition.y += upanddown * Time.deltaTime;
             transform.position = newPosition;
 
         }
@@ -40,7 +40,7 @@ public class examplemovement : MonoBehaviour {
         else if(state==2)
         {
             Vector3 newPosition = transform.position;
-            newPosition.y -= Time.deltaTime * upanddown;
+            newPosition.y -= upanddown*Time.deltaTime;
             transform.position = newPosition;
         }
         else if(state==3)
@@ -48,6 +48,7 @@ public class examplemovement : MonoBehaviour {
                
 
         }
+     
     }
 
     public void MoveStart()

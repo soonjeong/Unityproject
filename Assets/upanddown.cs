@@ -7,7 +7,9 @@ public class upanddown : MonoBehaviour {
     public float downvar;
     public float xrange;
     public float yrange;
-   
+
+    public Component fsm;
+
     private object newPosition;
 
     // Use this for initialization
@@ -26,7 +28,9 @@ public class upanddown : MonoBehaviour {
                 Mathf.Abs(mouse.y - newPosition.y) < yrange)
             { newPosition.y += upvar * Time.deltaTime;
 
-            transform.position = newPosition;}
+            transform.position = newPosition;
+            GetComponent<fsm>().Check(gameObject);
+            }
             
 
             
