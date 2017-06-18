@@ -49,11 +49,7 @@ public class fsm : MonoBehaviour
         {
             FailUI.SetActive(true);
         }
-     else if (phase == state.Success)
-        {
-            SuccessUI.SetActive(true);
-            Length++;
-        }
+     
   
 	}
     
@@ -62,12 +58,19 @@ public class fsm : MonoBehaviour
 
     void Show()
     {
+      
         time += Time.deltaTime;
-        if (time > 1.0f)
+        if (time < 3.0f)
         {
+
+        }
+        if (time > 3.0f)
+        {
+   
             time = 0;
             target[showOrder[ShowIndex]].GetComponent<examplemovement>().MoveStart();
             ShowIndex++;
+        
         }
         if (ShowIndex == showOrder.Count)
         {
@@ -80,8 +83,8 @@ public class fsm : MonoBehaviour
     public void Check(GameObject obj)
     {
         if (phase != state.Match)
-       {
-          return;
+        {
+            return;
         }
 
         if (obj == target[showOrder[MatchIndex]])
@@ -90,23 +93,44 @@ public class fsm : MonoBehaviour
 
             if (MatchIndex == showOrder.Count)
             {
+               
+                
+                SuccessUI.SetActive(true);
+                
                 phase = state.Success;
-                ShowIndex = 0;
             }
 
-            else
-            {
-                MatchIndex = 0;
-                phase = state.Fail;
-
-            }
 
         }
 
- 
+
+        else
+        {
+            phase = state.Fail;
+            FailUI.SetActive(true);
+
+        }
 
     }
 
-   
+    public void success()
+    {
+        ShowIndex = 0;
+        InitOrder();
+        phase = state.Show;
+        time = 0.0f;
+        MatchIndex = 0;
+        Length += 1;
+        SuccessUI.SetActive(false);
+    }
 
+    public void Fail()
+    {
+        ShowIndex = 0;
+        InitOrder();
+        phase = state.Show;
+        time = 0.0f;
+        MatchIndex = 0;
+        FailUI.SetActive(false);
+    }
 }

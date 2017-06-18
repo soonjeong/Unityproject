@@ -29,7 +29,8 @@ public class upanddown : MonoBehaviour {
             { newPosition.y += upvar * Time.deltaTime;
 
             transform.position = newPosition;
-            GetComponent<fsm>().Check(gameObject);
+            fsm.GetComponent<fsm>().Check(gameObject);
+             
             }
             
 
