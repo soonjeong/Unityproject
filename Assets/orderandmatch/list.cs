@@ -31,9 +31,12 @@ public class list : MonoBehaviour {
     public string kakikomu;
     public int index1;
     public int index2;
+    public GameObject gameover;
+
 
 	// Use this for initialization
 	void Start () {
+        gameover.SetActive(false);
 
         index1 = Random.Range(0, 7);
         index2 = Random.Range(0, 7);
@@ -58,7 +61,7 @@ public class list : MonoBehaviour {
         }
         if (phase == function.fail) {
             order.GetComponent<Text>().text = "다시 해봅시다";
-
+            gameover.SetActive(true);
                 }
         if (phase == function.success)
         {

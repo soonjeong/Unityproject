@@ -21,11 +21,13 @@ public class fsm : MonoBehaviour
     public int MatchIndex = 0;
     public GameObject FailUI;
     public GameObject SuccessUI;
+    public GameObject over;
 
 	// Use this for initialization
 	void Start ()
     {
         InitOrder();
+        over.SetActive(false);
         	
 	}
 	
@@ -108,6 +110,7 @@ public class fsm : MonoBehaviour
         {
             phase = state.Fail;
             FailUI.SetActive(true);
+            over.SetActive(true);
 
         }
 
@@ -132,5 +135,6 @@ public class fsm : MonoBehaviour
         time = 0.0f;
         MatchIndex = 0;
         FailUI.SetActive(false);
+
     }
 }

@@ -1,0 +1,57 @@
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   20.19.15.4364
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.096 seconds
+Platform assembly: C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\tedi_laptop_07\Documents\GitHub\Unityproject\어라_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 3.440893 ms
+Scene 'orderandmatch' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 127)
+
+Scene 'orderandmatch' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 127)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.550233 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 299.
+Total: 0.291555 ms (FindLiveObjects: 0.052444 ms CreateObjectMapping: 0.031555 ms MarkObjects: 0.203111 ms  DeleteObjects: 0.003555 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.671556 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 268.
+Total: 0.324889 ms (FindLiveObjects: 0.046666 ms CreateObjectMapping: 0.013333 ms MarkObjects: 0.252444 ms  DeleteObjects: 0.011111 ms)
+
+Scene 'orderandmatch' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 127)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2afc -> priority: 1 
