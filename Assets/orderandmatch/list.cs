@@ -108,5 +108,11 @@ public class list : MonoBehaviour {
         
     }
 
+    public void offtitl()
+    {
+        gameover.SetActive(false);
+
+    }
+
       
 }

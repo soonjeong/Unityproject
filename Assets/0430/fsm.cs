@@ -137,4 +137,9 @@ public class fsm : MonoBehaviour
         FailUI.SetActive(false);
 
     }
+
+    public void offtitle()
+    {
+        over.SetActive(false);
+    }
 }
